@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Types</title>
+    <style>
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .linear {
+            background: #466368;
+            background: linear-gradient(#648880, #293f50);
+            border-radius: 6px;
+            height: 120px;
+        }
+        .directional {
+            background: #466368;
+            background: linear-gradient(to right bottom, #648880, #293f50);
+            border-radius: 6px;
+            height: 120px;
+        }
+        .radial {
+            background: #466368;
+            background: radial-gradient(#648880, #293f50);
+            border-radius: 6px;
+            height: 120px;
+        }
+        .stop {
+            background: #466368;
+            background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+            border-radius: 6px;
+            height: 120px;
+        }
+        .stop-position {
+            background: #466368;
+            background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+            border-radius: 6px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Linear Gradient Background</h3>
+    <div class="linear"></div>
+    <h3>Changing Direction of the Gradient Background</h3>
+    <div class="directional"></div>
+    <h3>Radial Gradient Background</h3>
+    <div class="radial"></div>
+    <h3>Gradient Color Stops</h3>
+    <div Class="stop"></div>
+    <h3>Gradient Color Stop Positions</h3>
+    <div class="stop-position"></div>
+</body>
+</html>

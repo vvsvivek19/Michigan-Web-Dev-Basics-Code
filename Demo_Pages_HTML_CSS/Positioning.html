@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Positioning Example</title>
+    <style>
+        /*Make sure to scroll down!*/
+        div{
+            position:relative;
+            border:5px solid black;
+            height:300px;
+            width:400px;
+        }
+        p{
+            border:1px solid red;
+            width:50%;	
+            position:static;
+            top:100px;
+            left:100px;
+            /*The code below removes default browser styling.*/
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            -webkit-margin-start: 0;
+            -webkit-margin-end: 0;
+        }
+        /*TEST ME!!
+            1) Open this page and look at it.  The 	
+                paragraphs are all in their default
+                location.  The top/left values are 
+                ignored.
+            2) Using Inspect Element, uncomment the
+                next line so the position is relative.
+                Each of the paragraphs have moved from 
+                their ORIGINAL position
+            3) Change the position to absolute.  Now they
+                are placed 100 right 100 down from their PARENT
+            4) Change the position to fixed.  Now they 	
+                are placed 100 down and 100 right from the BROWSER*/
+    </style>
+  </head>
+  <body>
+    Check out the style sheet.  
+    I have put in instructions for changing the position styling for A, B, and C.  
+    Make sure to see the difference between static, relative, absolute, and fixed positioning.  
+    <div>
+      <p>A</p>
+      <p>B</p>
+    </div>
+    <div>
+      <p>C</p>
+    </div>
+  </body>
+</html>

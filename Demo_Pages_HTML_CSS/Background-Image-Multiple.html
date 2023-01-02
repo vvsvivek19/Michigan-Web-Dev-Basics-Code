@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Background Images</title>
+    <style>
+    /* Let’s go back to the success alert message once more to combine both the tick background image and the 
+    linear gradient background image. In order to do so, we’ll include two values within the second background property. 
+    The first value, the foremost image, will be the tick image. The second value, the rearmost image, will be the linear gradient. 
+    The two values are comma separated. */
+        .notice-success {
+            background: #67b11c;
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_1.svg") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);
+            border: 2px solid #467813;
+            border-radius: 5px;
+            color: #fff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 15px 20px 15px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-success">
+        Woo hoo! Congratulations, you did it!
+    </div>
+</body>
+</html>
