@@ -12,10 +12,12 @@
   
   <p>What happens if you forget the script tags?</p>
 	  <script>
-		    var name;
+		    var name, date;
             name = prompt("What is your name?");
 			document.write("Hi there ",name);
 			document.write("<h1>" + name + "</h1>");
+			date = Date();
+			document.write("Today is:". date);
   			document.write(document.baseURI+"<br>");
 			document.write(document.title+"<br>");
 	  </script>
