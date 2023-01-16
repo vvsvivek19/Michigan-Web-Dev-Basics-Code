@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Form example</title>
+    <title>Basic Form examples</title>
 </head>
 <body>
-    
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <!--First way of using label and input-->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="Vivek Singh"><br>
+            <!--Second way of using label and input-->
+            <label>Email: <input type="email" name="email" placeholder="username@gmail.com"></label><br>
+            <label for="birth">Birth Date</label>
+            <input type="date" id="birth" name="birth" value="birth"><br>
+            <input type="submit" value="Click Here">
+        </fieldset>
+    </form>
 </body>
 </html>
