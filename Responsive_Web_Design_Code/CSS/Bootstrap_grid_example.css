@@ -1,0 +1,22 @@
+div{
+    font-size:140%;
+    
+  }
+  
+  div[class^="d"]{
+    border: 1px solid black;
+    margin-top:3%;
+  }
+  
+  .extra_small {
+    color:green;
+  }
+
+  .medium {
+    color:blue;
+  }
+
+  .large{
+    color:red;
+  }
+ 
